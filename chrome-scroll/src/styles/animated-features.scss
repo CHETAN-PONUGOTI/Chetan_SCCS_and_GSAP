@@ -1,0 +1,71 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+
+.animated-section {
+  background: linear-gradient(180deg, $bg 0%, #fff 100%);
+  min-height: 400vh; // long scroll area so we can scrub through animations
+  display: block;
+
+  .spacer-top { height: 20vh; }
+  .spacer-bottom { height: 40vh; }
+
+  .sticky-wrap {
+    position: sticky;
+    top: 12vh; // keeps the sticky block slightly below top
+    width: 78%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+
+  .main-headline {
+    font-size: 2rem;
+    margin-bottom: 12px;
+    color: #111827;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .mockup {
+    width: 640px;
+    max-width: calc(100% - 60px);
+    background: $card;
+    border-radius: $radius;
+    box-shadow: 0 10px 30px rgba(2,6,23,0.08);
+    padding: 16px;
+
+    .browser-frame {
+      border-radius: 10px;
+      overflow: hidden;
+      background: linear-gradient(180deg, #fbfdff, #f2f6ff);
+      .address-bar { padding: 10px; font-size: 0.9rem; color: $muted; }
+      .content { height: 300px; display:flex; align-items:center; justify-content:center; img { max-width:100%; height:auto; opacity:0.95; } }
+    }
+  }
+
+  .scene {
+    width: 640px;
+    max-width: calc(100% - 60px);
+    min-height: 140px;
+    display: none; // scenes are shown/hidden via GSAP opacity
+    &.extensions, &.tabs, &.final-features { display: block; text-align:center; }
+
+    h3 { font-size: 1.25rem; margin-bottom: 12px; }
+    .icons { display:flex; gap:12px; justify-content:center; .icon { width:56px; height:56px; display:flex; align-items:center; justify-content:center; border-radius:10px; background:#fff; box-shadow:0 6px 18px rgba(2,6,23,0.06); font-weight:700; } }
+
+    .tab-groups { display:flex; gap:12px; justify-content:center; .tab { padding:8px 14px; background:#fff; border-radius:8px; box-shadow:0 6px 18px rgba(2,6,23,0.06);} }
+
+    .features { display:flex; gap:12px; justify-content:center; .feature { padding:10px 14px; background:#fff; border-radius:10px; box-shadow:0 6px 18px rgba(2,6,23,0.06);} }
+  }
+}
+
+.floating-images img {
+  position: absolute;
+  width: 100px;
+  opacity: 0.8;
+}

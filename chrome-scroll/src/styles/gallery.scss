@@ -1,0 +1,20 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+
+  .gallery-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    opacity: 0; // hidden until animation
+    transform: scale(1);
+    transition: transform 0.4s ease;
+
+    &:hover {
+      transform: scale(1.1); // smooth zoom on hover
+    }
+  }
+}
