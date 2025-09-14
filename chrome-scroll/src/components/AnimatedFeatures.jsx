@@ -104,6 +104,7 @@ export default function AnimatedFeatures() {
 
         <div className="mockup">
           <div className="browser-frame">
+            <div className="address-bar">www.example.com</div>
             <div className="content">
               <img src="https://framerusercontent.com/images/Y9zwTaneBHB6mYrE4nyyX07AL0.jpg" alt="placeholder" />
             </div>
@@ -113,10 +114,11 @@ export default function AnimatedFeatures() {
         <div className="scene extensions" ref={addSceneRef}>
           <h3>Extensions that help</h3>
           <div className="icons">
-            <div className="icon">T</div>
-            <div className="icon">A</div>
-            <div className="icon">G</div>
-            <div className="icon">C</div>
+            <div className="icon">H</div>
+            <div className="icon">U</div>
+            <div className="icon">E</div>
+            <div className="icon">M</div>
+            <div className="icon">N</div>
           </div>
         </div>
 
@@ -132,9 +134,9 @@ export default function AnimatedFeatures() {
         <div className="scene final-features" ref={addSceneRef}>
           <h3>Helpful features built-in</h3>
           <div className="features">
-            <div className="feature">Password Manager</div>
-            <div className="feature">Safety Check</div>
-            <div className="feature">Sync</div>
+            <div className="feature">Contanct</div>
+            <div className="feature">Blog</div>
+            <div className="feature">Demo Photography</div>
           </div>
         </div>
       </div>
