@@ -125,18 +125,18 @@ export default function AnimatedFeatures() {
         <div className="scene tabs" ref={addSceneRef}>
           <h3>Take control of your tabs</h3>
           <div className="tab-groups">
-            <div className="tab">Project Alpha</div>
-            <div className="tab">Portfolio</div>
-            <div className="tab">Docs</div>
+            <div className="tab">Contact</div>
+            <div className="tab">Blog</div>
+            <div className="tab">Demo Photography</div>
           </div>
         </div>
 
         <div className="scene final-features" ref={addSceneRef}>
           <h3>Helpful features built-in</h3>
           <div className="features">
-            <div className="feature">Contanct</div>
-            <div className="feature">Blog</div>
-            <div className="feature">Demo Photography</div>
+            <div className="feature">Password Manager</div>
+            <div className="feature">Safety Check</div>
+            <div className="feature">Sync</div>
           </div>
         </div>
       </div>
